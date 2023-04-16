@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style1.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="logo">
+               <img src="/images/login1.jpg" alt="reload">
+            </div>
+            <div class="form-container">
+                <form action="#" id="form">
+                    <h1>Welcome to Online Tutorialss</h1>
+                   
+                   <input type="text" name="myname" id="name" class="blk" placeholder="Username" required> 
+                   
+                   
+                   <input type="password" name="mypassword" id="password" class="blk" placeholder="Password" required>
+                 <div id="checkbox">
+                    <input type="checkbox" name="mylogin" id="save" >
+                    <label for="save" >Remember me</label>
+                 </div>
+                   
+    
+                   
+                   <button class="blk" id="students">Login</button>
+                   <button class="blk" id="admin">Admin Login</button>
+                   <a href="#" class=" center" >Forgot Password?</a>
+                   <a href="Signup.html" class=" center" >Don't have any Account?</a>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const student=document.getElementById('students');
+        const admin=document.getElementById('admin');
+        student.addEventListener("click",mylogin1);
+        function mylogin1(){
+            var user1=document.getElementById("name").value;
+            var password1=document.getElementById("password").value;
+            if(user1=="user@gmail.com" && password1=="user1234"){ 
+                window.location.assign('home.html');
+                alert("login Succssesfully");
+            }
+            else{
+                window.location.assign('login.html')
+                alert("Invalid User or password");
+                
+            }
+        }
+        admin.addEventListener("click",mylogin);
+        function mylogin(){
+            var user=document.getElementById('name').value;
+            var password=document.getElementById('password').value;
+            
+            
+            if(user=="admin@gmail.com" && password=="admin1234"){
+            
+                window.location.assign('Admin.html');
+                alert("login Succssesfully");
+                
+            }
+            else{
+                window.location.assign('login.html');
+                alert("Invalid User or password");
+                
+            }
+        }
+    </script>
+</body>
+</html>

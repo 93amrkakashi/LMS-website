@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Dancing+Script&family=Poppins:wght@100;200;300;400;500&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.blk{
+  display: block;
+  
+}
+.main-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(173, 14, 41);
+}
+.container{
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  border: 2px solid rgb(173, 14, 41);
+  border-radius: 20px;
+  background-color: white;
+}
+.logo img{
+  width:400px;
+  height: 400px;
+}
+.form-container{
+    width:500px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#form {
+  margin: auto 0px;
+  padding: 1rem 1rem;
+
+}
+#form h1{
+  text-align: center;
+  color: rgb(185, 19, 47);
+}
+#form input[type="text"],#form input[type="password"],#form input[type="email"],#form input[type="number"]{
+  width:70%;
+  margin: 1.5rem auto;
+  padding: 1rem 0.9rem;
+  border: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgba(128, 121, 121, 0.452);
+}
+#form input[type="password"]{
+  margin-bottom: 0.5rem;
+}
+
+#checkbox{
+  display: block;
+  width: 70%;
+  margin: 0px auto;
+}
+.center{
+  display: block;
+  width: 70%;
+  margin: 25px auto;
+  color:rgb(13, 102, 13);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.login{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#form button{
+  
+  width:70%;
+  margin: 1rem auto;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: white;
+  color: white;
+  background-color: rgb(22, 128, 22);
+  
+}
+#form button:hover{
+    background-color: rgb(31, 97, 31);
+  cursor: pointer;
+}
+.center:hover{
+  color: rgb(209, 33, 63) ;
+}
+@media only screen and (max-width:1160px){
+  body{
+    font-size: 1rem;
+  }
+  .logo{
+    display: none;
+  }
+  #form{
+    padding: 0.3rem;
+  }
+  
+}

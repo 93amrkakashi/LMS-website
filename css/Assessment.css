@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Dancing+Script&display=swap');
+/* font-family: 'Bree Serif', serif; */
+/* font-family: 'Baloo Bhai 2', cursive; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+.main-container{
+    width: 100vw;
+    min-height: 100vh;
+   position: absolute;
+   z-index: 1;
+    background-color:rgb(197, 26, 55);
+    flex-direction: column;
+}
+.inner-container h1{
+    margin: 15px 0px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+.inner-container{
+    background-color:white;
+    width: 500px;
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -5px black;
+}
+.inner-container h2{
+    font-size: 25px;
+    margin: 1rem 0 2rem 0;
+    border-radius: 10px;
+    background-color: rgb(76, 195, 231);
+    padding: 10px 5px;
+}
+.inner-container li{
+    margin-top: 1.5rem;
+    list-style: none;
+    border-radius: 10px;
+    background-color: gray;
+    padding: 10px 10px;
+    color: black;
+}
+.inner-container li:hover{
+    background-color: gray;
+    transform: scale(1.1);
+    
+}
+.inner-container li:active{
+    background-color: green;
+}
+
+
+input:hover{
+    cursor: pointer;
+    
+}
+label:hover{
+    cursor: pointer;
+    
+}
+.btn{
+   padding: 0.6rem 2rem; 
+   outline: none;
+   font-size: 1.3rem;
+   display: block;
+   margin: 1rem auto;
+   border: 2px solid black;
+   border-radius: 10px;
+   background-color:red ;
+
+}
+.btn:hover{
+    
+    background-color:rgb(139, 6, 6) ;
+    cursor: pointer;
+    
+}
+#showScore{
+    background-color: rgb(21, 226, 21);
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    box-shadow: 10px 10px 10px -5px black;
+}
+.scoreArea{
+    display: none;
+}
+#showScore h3{
+    font-size: 2rem;
+    text-align: center;
+}
+#showScore .btn{
+    margin-top: 1rem;
+    background-color: yellow;
+    color: black;
+}
+#showScore .btn:hover{
+   background-color: rgb(202, 202, 25);
+   /* color: white; */
+   cursor: pointer;
+}
+@media screen and (max-width:556px)  {
+    .inner-container{
+        width: 90%;
+    }
+}
